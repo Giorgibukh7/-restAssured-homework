@@ -1,4 +1,4 @@
-package Utils;
+package Data.Models;
 
 public class UserForm {
     public String name;

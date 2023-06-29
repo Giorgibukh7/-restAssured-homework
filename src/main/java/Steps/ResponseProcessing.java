@@ -1,5 +1,7 @@
-package Utils;
+package Steps;
 
+import Data.Models.RegistrationFailureResponse;
+import Data.Models.RegistrationSuccessResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
