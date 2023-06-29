@@ -1,3 +1,5 @@
+package Utils;
+
 public class UserForm {
     public String name;
     public String job;
