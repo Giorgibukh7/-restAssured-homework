@@ -1,7 +1,7 @@
 import Utils.Requests;
-import Utils.RegistrationForm;
-import Utils.ResponseProcessing;
-import Utils.UserForm;
+import Data.Models.RegistrationForm;
+import Steps.ResponseProcessing;
+import Data.Models.UserForm;
 import org.testng.annotations.Test;
 
 public class DeserializationTest {

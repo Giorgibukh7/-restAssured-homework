@@ -27,12 +27,13 @@ public class RestAssuredAuthTest {
                         .when()
                         .post()
                         .then().extract().jsonPath().get("token");
+        System.out.println(token);
 
 
                 RestAssured.given().contentType(ContentType.JSON).header("Cookie","token="+token)
                         .when()
                         .delete("https://restful-booker.herokuapp.com/booking/"+DeleteBookId)
-                        .then().assertThat().statusCode(201);
+                        .then().log().all().and().assertThat().statusCode(201);
 
 
 
